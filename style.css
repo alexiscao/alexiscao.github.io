@@ -1,15 +1,23 @@
+body {
+  background-color: #F2F6F2;
+}
+
+a {
+  color: #15918b;
+  text-decoration: none;
+}
+
 .intro {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .intro-text {
-  text-align: justify;
+  text-align: left;
 }
 
 .profile-pic {
-  float: right;
   width: 170px;
   margin-left: 2em;
   border-radius: 10px;
@@ -33,7 +41,8 @@
 }
 
 .section {
-  margin-top: 3em;
+    font-size: 1.5em;
+    margin-top: 2.5em;
 }
 
 
