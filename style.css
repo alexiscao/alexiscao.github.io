@@ -13,8 +13,9 @@ a {
   justify-content: space-between;
 }
 
-.intro-text {
+.intro-text p {
   text-align: left;
+  margin-bottom: 0em;
 }
 
 .profile-pic {
