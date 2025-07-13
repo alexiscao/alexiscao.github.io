@@ -7,6 +7,18 @@ a {
   text-decoration: none;
 }
 
+.site-title {
+  display: flex;         
+  align-items: baseline;  
+  gap: 1rem;          
+  margin-bottom: 1em;             
+}
+
+.site-logo {
+  width: 28px;          
+  height: auto;
+}
+
 .intro {
   display: flex;
   align-items: flex-start;
@@ -20,6 +32,7 @@ a {
 
 .profile-pic {
   width: 170px;
+  height: 212px;
   margin-left: 2em;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
@@ -43,7 +56,7 @@ a {
 
 .section {
     font-size: 1.5em;
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 
 
