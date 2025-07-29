@@ -1,5 +1,5 @@
 body {
-  background-color: #F2F6F2;
+  background-color: #FAFAFA;
 }
 
 a {
@@ -32,11 +32,19 @@ a {
 
 .profile-pic {
   width: 170px;
-  height: 212px;
   margin-left: 2em;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
+
+/* .profile-pic {
+  order: -1;
+  width: 170px;
+  margin-left: 0;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+} */
 
 @media (max-width: 600px) {
   .intro {
