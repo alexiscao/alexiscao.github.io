@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{- $headless := .Site.GetPage "/homepage" -}}
+<main>
+  <div class="menubar">
+    <a href="https://bsky.app/profile/alexiscao.bsky.social">Bluesky</a>
+    <a href="https://github.com/alexiscao">Github</a>
+    <a href=" ">Google Scholar</a>
+  </div>
+  <h1>Alexis Cao</h1>
+  <div class="intro">
+    <div class="intro-text">
+      <img class="profile-pic" src="/img/prof_pic.jpg">
+      {{ .Content }}
+    </div>
+  </div>
+  <div class="section" id="papers">
+    <h2>Papers</h2>
+    {{ partial "papers.html" . }}
+  </div>
+  <div class="section" id="talks">
+    <h2>Talks</h2>
+    {{ partial "talks.html" . }}
+  </div>
+  <div class="section" id="volunteer">
+    <h2>Volunteer</h2>
+    {{ partial "volunteer.html" . }}
+  </div>
+  <div style="margin-bottom: 5em"></div>
+</main>
+{{ end }}

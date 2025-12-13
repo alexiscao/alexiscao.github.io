@@ -1,0 +1,13 @@
+- title: Analysis and Attacks on the Reputation System of Nym
+  year: 2025
+  authors:
+    - Xinmu Alexis Cao
+    - Matthew Green
+  venue: Proceedings on Privacy Enhancing Technologies 2026 (PoPETs '26)
+  resources:
+    - name: Accepted
+    - name: Code
+      url: "https://github.com/alexiscao/nym-reputation-system"
+
+
+

@@ -1,0 +1,8 @@
+- name: "Beyond VPN and Tor: Protect Your Privacy With Decentralized Mixnets"
+  venue: BSidesCharm 2025
+  resources:
+    - name: video
+      url: https://www.youtube.com/watch?v=oGQ4nDvTW_4
+    - name: slides
+      url: slides/bsidescharm_2025.pdf
+

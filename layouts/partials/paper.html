@@ -1,0 +1,38 @@
+{{- $paper := . -}}
+<li style="list-style: none; padding-left: 0; margin-left: 0;">
+  <strong>{{- .title -}}</strong><br>
+  {{- $numAuthors := len .authors -}}
+  {{- $i := 1 -}}
+  {{- range .authors -}}
+    {{- . -}}
+    {{- if (and $paper.leadauth (le $i $paper.leadauth)) -}}
+      *
+    {{- end -}}
+    {{- if not (eq $i $numAuthors) -}}
+      ,&nbsp;
+    {{- end -}}
+    {{- $i = add 1 $i -}}
+  {{- end -}}
+  <br>
+  <div>
+    {{- if .venue -}}
+      <div><span class="paper-venue">{{- .venue -}}</span></div>
+    {{- end -}}
+    {{- if .resources -}}
+      <div>
+        {{- $numResources := len .resources -}}
+        {{- range $i, $r := .resources -}}
+          {{- if $r.url -}}
+            <a target="_blank" href="{{ $r.url }}">{{ strings.FirstUpper $r.name }}</a>
+          {{- else -}}
+            <span>{{ strings.FirstUpper $r.name }}</span>
+          {{- end -}}
+        
+          {{- if not (eq (add $i 1) $numResources) -}}
+            &nbsp;&bull;&nbsp;
+          {{- end -}}
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+</li>

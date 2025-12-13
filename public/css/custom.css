@@ -1,0 +1,90 @@
+body {
+  background-color: #F5F5F5;
+}
+
+a {
+  color: #3E7F63;
+  text-decoration: none;
+}
+a:hover, a:focus { color: #6FA982; }
+
+main > h1 { font-weight: 700}
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.intro-text {
+  text-align: left;
+}
+
+.profile-pic {
+  float: right;
+  width: 170px;
+  margin-left: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    order: -1;
+    width: 170px;
+    margin-left: 0.7em;
+    margin-bottom: 0.7em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  }
+}
+
+.paper-venue {
+  font-style: italic;
+}
+
+.section {
+  margin-top: 3em;
+}
+
+.section > h2 { 
+  font-size: 1.7rem; 
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.section > h2 + * { margin-top: 0em; }
+
+.papers > li + li { margin-top: 0.6rem; }
+
+.talk {
+  list-style: none;
+}
+
+.talks > li + li { margin-top: 0.6rem; }
+
+.talk a {
+  font-size: normal;
+}
+
+.talk-venue-name {
+  margin-right: 1em
+}
+
+.volunteer > li + li { margin-top: 0.4rem; }
+
+.menubar {
+  font-size: 0.90em;
+  display: flex;
+  gap: 2em;
+  margin-top: 1em;
+  justify-content: right;
+}
+
+.menubar > a {
+  color: #555;
+}

@@ -1,0 +1,13 @@
+<ul class="volunteer" style="list-style: none; padding-left: 0; margin-left: 0;">
+  {{- range .Site.Data.volunteer -}}
+    <li style="list-style: none; padding-left: 0; margin-left: 0;">
+      <strong>{{ .name }}</strong>
+      {{- $desc := or .description .descriptions -}}
+      {{- if $desc -}}
+        <span> {{ $desc }}</span>
+      {{- end -}}
+    </li>
+  {{- end -}}
+</ul>
+
+

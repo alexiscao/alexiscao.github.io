@@ -1,0 +1,26 @@
+<ul class="talks" style="list-style: none; padding-left: 0; margin-left: 0;">
+  {{- range .Site.Data.talks -}}
+    <li style="list-style: none; padding-left: 0; margin-left: 0;">
+      <strong>{{ .name }}</strong><br>
+      <div>
+        {{- if .venue -}}
+          <span class="talk-venue-name">{{- .venue -}}</span>
+        {{- end -}}
+        {{- if .resources -}}
+          <span style="margin-left: 0.75em;">
+            {{- $numResources := len .resources -}}
+            {{- range $i, $r := .resources -}}
+              {{- if $r.url -}}
+                <a target="_blank" href="{{ $r.url }}">{{ strings.FirstUpper $r.name }}</a>
+              {{- else -}}
+                <span>{{ strings.FirstUpper $r.name }}</span>
+              {{- end -}}
+              {{- if not (eq (add $i 1) $numResources) -}}&nbsp;&bull;&nbsp;{{- end -}}
+            {{- end -}}
+          </span>
+        {{- end -}}
+      </div>
+    </li>
+  {{- end -}}
+</ul>
+
