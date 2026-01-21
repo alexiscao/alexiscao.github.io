@@ -5,7 +5,8 @@
     - Matthew Green
   venue: Proceedings on Privacy Enhancing Technologies 2026 (PoPETs '26)
   resources:
-    - name: Accepted
+    - name: The Andreas Pfitzmann Best Student Paper Award
+      url: "https://petsymposium.org/2026/student-paper-award.php"
     - name: Code
       url: "https://github.com/alexiscao/nym-reputation-system"
 
