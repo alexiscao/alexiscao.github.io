@@ -8,6 +8,8 @@
     - name: The Andreas Pfitzmann Best Student Paper
       url: "https://petsymposium.org/2026/student-paper-award.php"
   resources:
+    - name: Proceedings
+      url: "https://petsymposium.org/popets/2026/popets-2026-0048.php"
     - name: Eprint
       url: "https://eprint.iacr.org/2026/101"
     - name: Artifact
