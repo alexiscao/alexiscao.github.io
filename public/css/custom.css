@@ -17,13 +17,14 @@ main > h1 { font-weight: 700}
 }
 
 .intro-text {
-  text-align: justify;
+  text-align: left;
 }
 
 .profile-pic {
   float: right;
-  width: 170px;
-  margin-left: 2em;
+  width: 172px;
+  margin-left: 1.55em;
+  margin-bottom: 0.75em;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
