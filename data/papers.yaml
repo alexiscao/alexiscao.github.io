@@ -10,10 +10,12 @@
   resources:
     - name: Proceedings
       url: "https://petsymposium.org/popets/2026/popets-2026-0048.php"
-    - name: Eprint
-      url: "https://eprint.iacr.org/2026/101"
+    - name: Talk
+      url: "https://youtu.be/CRES6-EMPHY?si=6u96qDZLqbF15Tf6"
     - name: Artifact
       url: "https://github.com/alexiscao/nym-reputation-system"
+    - name: Eprint
+      url: "https://eprint.iacr.org/2026/101"
 
 
 
